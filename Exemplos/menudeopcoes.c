@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <stdio.h>>
 
 int main() {
     int opcao;
-    float salario, imposto; // imposto vai armazenar o valor calculado
+    float salario, imposto;
 
     printf("Qual das opções você escolhe:\n");
     printf("1 - Imposto\n");
@@ -21,7 +21,7 @@ int main() {
             } else if (salario >= 500 && salario < 850) {
                 imposto = salario * 0.10;
                 printf("Imposto de 10%% = R$ %.2f\n", imposto);
-            } else { // salario >= 850
+            } else { // salario maior ou igual que 850
                 imposto = salario * 0.15;
                 printf("Imposto de 15%% = R$ %.2f\n", imposto);
             }
