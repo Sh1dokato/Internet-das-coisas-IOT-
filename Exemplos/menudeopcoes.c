@@ -2,7 +2,7 @@
 
 int main() {
     int opcao;
-    float salario; // salário pode ter centavos
+    float salario, imposto; // imposto vai armazenar o valor calculado
 
     printf("Qual das opções você escolhe:\n");
     printf("1 - Imposto\n");
@@ -16,11 +16,14 @@ int main() {
             scanf("%f", &salario);
 
             if (salario < 500) {
-                printf("Você deve 5%% ao governo\n");
+                imposto = salario * 0.05;
+                printf("Imposto de 5%% = R$ %.2f\n", imposto);
             } else if (salario >= 500 && salario < 850) {
-                printf("Você deve 10%% ao governo\n");
+                imposto = salario * 0.10;
+                printf("Imposto de 10%% = R$ %.2f\n", imposto);
             } else { // salario >= 850
-                printf("Você deve 15%% ao governo\n");
+                imposto = salario * 0.15;
+                printf("Imposto de 15%% = R$ %.2f\n", imposto);
             }
             break;
 
@@ -29,9 +32,9 @@ int main() {
             scanf("%f", &salario);
 
             if (salario > 1500) {
-                printf("Novo salário: %.2f\n", salario + 25);
+                printf("Novo salário: R$ %.2f\n", salario + 25);
             } else {
-                printf("Novo salário: %.2f\n", salario + 50);
+                printf("Novo salário: R$ %.2f\n", salario + 50);
             }
             break;
 
