@@ -4,13 +4,13 @@
 int main(){
     float preco[TAMANHO], totalObjeto[TAMANHO];
     int quantidade[TAMANHO];
-    float totalVendas = 0, comissaom salarioFixo = 545;
+    float totalVendas = 0, comissao, salarioFixo = 545;
     int maisVendido = 0, i;
 
     for(i = 0; i < TAMANHO; i++){
-        printf("Preço do objeto: %d", i+1);
+        printf("Preço do objeto %d : ", i+1);
         scanf("%f", &preco[i]);
-        printf("Quantidade do objeto: %d", i+1);
+        printf("Quantidade do objeto %d : ", i+1);
         scanf("%d", &quantidade[i]);
     }
 
