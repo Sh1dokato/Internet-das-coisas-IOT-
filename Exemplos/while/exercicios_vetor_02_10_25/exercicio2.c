@@ -4,7 +4,6 @@ int main() {
     char *carros[5] = {"Fusca", "Gol", "Camaro", "Ferrari", "Porsche"};
     float consumo[5], litros, menorLitros, distancia = 1000;
     int i, maisEconomico = 0;
-    float 
 
     for (i = 0; i < 5; i++) {
         printf("Digite o consumo do %s (km/l): ", carros[i]);
